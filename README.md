@@ -1,56 +1,38 @@
-# ani-cli
+# ani-cli-es
 
-> Script working again :), thanks to the fork by
-> [Dink4n](https://github.com/Dink4n/ani-cli) for the alternative approach to
-> by pass the captcha on [gogoanime](https://gogoanime.vc)
+A cli to browse and watch anime in spanish.
 
-A cli to browse and watch anime.
-
-This tool scrapes the site [gogoanime](https://gogoanime.pe).
+This tool scrapes the site [jkanime](https://jkanime.net/).
 
 ## Download
 
 ```bash
-git clone https://github.com/pystardust/ani-cli.git
+git clone https://github.com/hiperion14/ani-cli-es.git
 ```
 
 ## Install
 
 ```bash
-cd ani-cli
+cd ani-cli-es
 sudo make
 ```
 
 ## Usage
 
   ### watch anime
-  ``ani-cli <query>``
-
-  ### download anime
-  ``ani-cli -d <query>``
+  ``ani-cli-es <query>``
 
   ### resume watching anime
-  ``ani-cli -H``
+  ``ani-cli-es -H``
 
   ### delete anime from history
-  ``ani-cli -D``
+  ``ani-cli-es -D``
 
-  ### set video quality
-  ``ani-cli -q 360``
-
-By default `ani-cli` would try to get the best video quality available  
-You can give specific qualities like `360/480/720/..`
-
-You can also use special names:
-
-* `best`: Select the best quality available
-* `worst`: Select the worst quality available
-
-Multiple episodes can be viewed/downloaded by giving the episode range like so
+Multiple episodes can be viewed by giving the episode range like so
 
   Choose episode [1-13]: 1 6
 
-This would open/download episodes 1 2 3 4 5 6
+This would open episodes 1 2 3 4 5 6
 
 ## Dependencies
 
@@ -59,7 +41,3 @@ This would open/download episodes 1 2 3 4 5 6
 * sed
 * mpv
 * ffmpeg
-
-## Misc
-
-- Windows instructions can be found in this branch https://github.com/pystardust/ani-cli/tree/windows-vlc
